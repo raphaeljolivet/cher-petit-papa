@@ -1,0 +1,82 @@
+body {
+	font-size:x-large;
+}
+
+html, body {
+	height:100%
+}
+
+#header {
+	text-align: center;
+	padding:1em;
+	background-color: rgba(255, 255, 255, 0.68);
+}
+
+h1, .titre {
+	font-family: Tahoma, Geneva, sans-serif;
+	margin:0;
+}
+
+h1, #sous-titre {
+	font-weight:bold;
+	color:rgba(42, 43, 81, 0.87);
+
+}
+
+#sous-titre {
+	font-size:x-large;
+	font-style:italic;
+}
+
+.titre, .carte {
+	padding: 1em;
+}
+
+.carte {
+	margin-left:2em;
+	border-left:4px solid #cabfbf;
+	font-size: x-large;
+	color:white;
+	background-color:rgba(22, 25, 27, 0.7);
+	font-style:italic;
+}
+
+.date {
+	font-weight : bold;
+	color:#c6166d
+}
+
+body {
+	background-size: cover;
+}
+
+.titre {
+	background-color:rgba(255, 255, 255, 0.56);
+}
+
+#content {
+	background-color:rgba(255, 255, 255, 0.26);
+	margin:none;
+	padding:1em;
+	height:100%;
+}
+
+#colonne {
+	background-color : rgba(23, 24, 25, 0);
+	width:25em;
+	margin:auto
+}
+
+#footer {
+	padding:0.5em;
+	text-align: right;
+	background-color:rgba(0, 0, 0, 0.72);
+	color:white;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:medium;
+}
+
+.creation-date {
+	color: #c5206d
+}
