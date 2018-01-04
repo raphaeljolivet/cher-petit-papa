@@ -5,6 +5,10 @@ $SOUS_TITRE = "Chaque jour, un petit merci & une récompense ...";
 $AUTEUR = "Ton fils";
 $DATE_CREATION="Noël 2017";
 
+# Date d'anniversaire
+$ANNIV_JOUR=5;
+$ANNIV_MOIS=1;
+
 # Date de base pour le début du décompte
 $BASE_DATE="2017-12-21T00:00:00";
 

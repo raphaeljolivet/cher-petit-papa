@@ -12,6 +12,11 @@ if (isset($_GET['date'])) {
 $date_idx = (int) $date->diff(date_create($BASE_DATE))->format("%a");
 
 $date_txt=strftime("%A %e %B %Y", $date->getTimestamp());
+$date_day = (int) strftime("%d", $date->getTimestamp());
+$date_month = (int) strftime("%m", $date->getTimestamp());
+
+$is_anniv = $date_day == $ANNIV_JOUR && $date_month == $ANNIV_MOIS;
+
 
 error_log("Date idx : $date_idx");
 
@@ -52,6 +57,9 @@ $recompense = $recompenses[$date_idx % count($recompenses)];
         <p class="titre">
             Bonjour petit papa. <br/> 
             Aujourd'hui, <span class="date"><?= $date_txt ?></span><br/>
+            <?php if ($is_anniv) : ?>
+                <span class="date">Bon anniversaire !!</span><br/>
+            <?php endif; ?>
             Je voudrais te remercier pour ... 
         </p>
         <p class="carte" id="merci">
